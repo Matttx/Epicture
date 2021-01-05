@@ -3,8 +3,8 @@
 A Flutter project.
 
 ## Be careful
-Our default branch is architecture, so before running the app, checkout on the master branch.
 
+Our Imgur API Key is outdated, if you want use the application, replace my outdated API Key with yours.
 
 ## Run
 
