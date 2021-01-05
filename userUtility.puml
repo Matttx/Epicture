@@ -1,0 +1,39 @@
+@startuml sequence
+actor John
+participant FeedView
+participant SearchView
+participant ImagesView
+participant FavoritesView
+
+John --> John: Wants to look his feed
+John --> FeedView: Go in the FeedView
+FeedView --> John: Display his feed
+John --> John: Wants to add an image to his favorite images
+John --> FeedView: Press on the button to add an image to his favorite images
+FeedView --> FavoritesView: Update the favorite images' list
+FeedView --> John: Update the button to report to john that this image is now in his favorite images
+John --> John: Wants to search an image
+John --> SearchView: Press on the search button to access to the SearchView
+SearchView --> John: Display a text field to make a search and filters
+John --> John: Wants to add some filters
+John --> SearchView: Select filters
+John --> SearchView: Press the search button to update his feed
+SearchView --> FeedView: Update the feed according to selected filters
+FeedView --> John: Display his feed
+John --> John: Wants to upload an image
+John --> ImagesView: Go in the ImagesView
+ImagesView --> John: Display his uploaded images and a button to upload an image
+John --> ImagesView: Press the upload button
+ImagesView --> John: Display John's gallery to select an image
+John --> ImagesView: Select an image and press on the button to upload it
+ImagesView --> ImagesView: Upload the image
+ImagesView --> ImagesView: Update the uploaded images' list
+ImagesView --> John: Display the updated uploaded images' list
+John --> John: Wants to see his favorite images
+John --> FavoritesView: Go in the FavoritesView
+FavoritesView --> John: Display the favorite images' list
+John --> John: Wants to unfavorite an image
+John --> FavoritesView: Press on the favorite button to unfavorite it
+FavoritesView --> FavoritesView: Update the favorite images' list
+FavoritesView --> John: Display the updated favorite images' list
+@enduml

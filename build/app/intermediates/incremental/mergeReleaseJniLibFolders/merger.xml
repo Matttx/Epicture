@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/matteo/delivery/2020/AppDev/B-DEV-501-TLS-5-1-epicture-nathan.sadre/android/app/src/main/jniLibs"/></dataSet><dataSet config="release" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/matteo/delivery/2020/AppDev/B-DEV-501-TLS-5-1-epicture-nathan.sadre/android/app/src/release/jniLibs"/></dataSet></merger>

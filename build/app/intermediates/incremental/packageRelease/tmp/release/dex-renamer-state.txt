@@ -1,0 +1,4 @@
+#Tue Oct 13 15:03:29 CEST 2020
+base.0=/Users/matteo/delivery/2020/AppDev/B-DEV-501-TLS-5-1-epicture-nathan.sadre/build/app/intermediates/transforms/r8/release/0/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

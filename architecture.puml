@@ -1,0 +1,55 @@
+@startuml architecture
+namespace Views {
+  class FeedView {
+    Main view of the app
+    --
+    - List<Photo> _Photos[]
+  }
+
+  class SearchView {
+    View to search images
+    and filter research
+    --
+    + String sortList = ["Viral", "Top", "Time"]
+    + String windowList = ["Day, "Week", "Month", "Year", "All"]
+    + TextField()
+    + GestureDetector(child: Container)
+  }
+
+  class ImagesView {
+    View to upload image
+    and see your uploaded images
+    --
+    - List<Photo> _uploadedImages[]
+  }
+
+  class FavoritesView {
+    View to see our favorites images
+    --
+    - List<Photo> _favoriteImages[]
+  }
+}
+
+class Photo {
+  Customize component that
+  include images and their title
+  --
+  + Image image
+  + String title
+  - bool _isLiked
+}
+Photo --* Views.FeedView
+Photo --* Views.ImagesView
+Photo --* Views.FavoritesView
+
+
+class SelectableItem {
+  Component that include a String
+  and a clicable Icon
+  --
+  + String label
+  + Icon select
+  - bool _isSelected
+}
+SelectableItem --* Views.SearchView
+@enduml
