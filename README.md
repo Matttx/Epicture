@@ -1,6 +1,5 @@
 # epicture
-
-A Flutter project.
+A Flutter project made by me and [Nathan Sadre](https://github.com/nath4n-sdr)
 
 ## Be careful
 
