@@ -4,7 +4,7 @@ A Flutter project.
 
 ## Be careful
 
-Our Imgur API Key is outdated, if you want use the application, replace my outdated API Key with yours.
+Our Imgur API Key is outdated, if you want to use the application, replace my outdated API Key with yours.
 
 ## Run
 
